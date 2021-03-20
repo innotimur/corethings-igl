@@ -20,10 +20,4 @@ npm start
 
 ## Дизайн
 
-[figma](https://www.figma.com/file/2H0780GJF2ARswqYCtwqCW)
-
-
-
-
-## Contact
-[telegram](https://tlgg.ru/mister_madness)
+[figma](https://www.figma.com/file/ip87ylmvIDyEoic8hEDbu0/MVP-Corethings)
