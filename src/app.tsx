@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Login from './containers/login';
+
 const App = () => {
-    return(
-        <h1>Hello world для проекта - corethings</h1>
+    return (
+        <Login />
     )
-}
+};
 
 export default App;
 
