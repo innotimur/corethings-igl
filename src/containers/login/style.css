@@ -1,33 +1,23 @@
 .wrapper {
     font-family: Roboto;
+    text-align: center;
 }
 
-.main-block {
-    width: 400px;
-    height: 365px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 3px 5px rgba(9, 30, 66, 0.2), 0px 0px 1px rgba(9, 30, 66, 0.31);
-    border-radius: 3px;
+.logo-and-name {
+    padding-top: 110px;
+    padding-bottom: 45px;
 }
-
-.input-field {
-    width: 240px;
-    height: 40px;
-    border: 2px solid #4C9AFF;
-    box-sizing: border-box;
-    border-radius: 3px;
-}
-
 
 .logo {
     width: 32px;
     height: 32px;
+    vertical-align: text-bottom;
 }
 
 .app-name {
-    font-family: Roboto;
+    width: 179px;
+    padding-left: 13px;
+    display: inline;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -35,36 +25,71 @@
     color: #253858;
 }
 
+.main-block {
+    padding-top: 18px;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 365px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 5px #ced2d9, 0px 0px 1px #b3b9c4;
+    border-radius: 3px;
+}
+
+.input-field {
+    margin-top: 12px;
+    width: 240px;
+    height: 40px;
+    border: 2px solid #DFE1E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    &:focus {
+        border: 2px solid #4C9AFF;
+    }
+}
 
 .entry-button {
-    display: flex;
-    flex-direction: column;
+    margin-top: 12px;
     align-items: center;
-    padding: 6px 12px;
     width: 240px;
     height: 32px;
     background: #4C9AFF;
     border-radius: 3px;
     color: #ffffff;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 20px;
 }
 
 .google-button {
-    display: flex;
-    flex-direction: column;
+    margin-top: 12px;
     align-items: center;
-    padding: 6px 12px;
     width: 240px;
     height: 32px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px rgba(9, 30, 66, 0.31);
+    background: #4C9AFF;
     border-radius: 3px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .google-logo {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.google-name {
+    text-align:center;
+    display: inline;
+    font-style: normal;
+    padding-left: 4px;
+}
+
+.text {
+    margin-top: 12px;
+    font-family: Roboto;
 }

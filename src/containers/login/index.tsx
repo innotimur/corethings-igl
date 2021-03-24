@@ -7,11 +7,9 @@ import style from './style.css';
 
 const Login = () => (
     <div className={style.wrapper}>
-        <div>
+        <div className={style.logoAndName}>
             <img className={style.logo} src={Logo}/> 
-            <div className={style.appName}>
-                Corethings
-            </div>
+            <div className={style.appName}>Corethings</div>
         </div>
         <div className={style.mainBlock}>
             <div>
@@ -26,17 +24,19 @@ const Login = () => (
             <button className={style.entryButton}>
                 Войти
             </button>
-            <div>
+            <div className={style.text}>
                 Или
             </div>
-            <button className={style.entryButton}>
+            <button className={style.googleButton}>
                 <img className={style.googleLogo} src={Google}/>
-                Войти с помощью Google
+                <div className={style.googleName}>
+                    Войти с помощью Google
+                </div>
                 </button>
-            <div>
+            <div className={style.text}>
                 Забыли пароль?
             </div>
-            <div>
+            <div className={style.text}>
                 Зарегистрироваться
             </div>
         </div>
