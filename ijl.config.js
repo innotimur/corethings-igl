@@ -14,21 +14,23 @@ module.exports = {
               {
                 test: /\.css$/i,
                 use: [
-                  {loader: "style-loader",},
+                  {
+                    loader: "style-loader",
+                  },
                   {
                     loader: "css-loader",
                     options: {
                         modules: {
                           mode: 'local',
+                          auto: true,
                           localIdentName: isProd ?
                             '[hash:base64]'
                             : '[path]--[name]__[local]--[hash:base64:3]',
                           localIdentContext: path.resolve(__dirname, 'src'),
                           exportLocalsConvention: "camelCase",
+                          exportGlobals: true,
                           /*compileType: "module",
                           mode: "local",
-                          auto: true,
-                          exportGlobals: true,
                           localIdentName: "[path][name]__[local]--[hash:base64:5]",
                           localIdentContext: path.resolve(__dirname, "src"),
                           //namedExport: true,
